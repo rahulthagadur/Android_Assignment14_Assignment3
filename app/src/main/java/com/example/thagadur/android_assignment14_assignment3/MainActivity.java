@@ -3,6 +3,7 @@ package com.example.thagadur.android_assignment14_assignment3;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         saveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String fileName = "Android Assignment";
+                String fileName = "AndroidApplication";
                 String content = "Example of the application";
                 FileOutputStream outputStream = null;
                 try {
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String path = getFilesDir().getAbsolutePath() + "/AndroidApplication";
+                Log.i("path=",path);
                 System.out.println("Path of the file =" + path);
                 File file = new File(path);
 

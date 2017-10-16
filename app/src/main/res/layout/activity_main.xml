@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:paddingBottom="16dp"
-android:paddingLeft="16dp"
-android:paddingRight="16dp"
-android:paddingTop="16dp"
-android:gravity="center"
-tools:context="com.example.thagadur.android_assignment14_assignment3.MainActivity">
-
-<Button
-    android:id="@+id/save_file"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Save File" />
-
-<Button
-    android:id="@+id/check_file"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Check File"
-    android:layout_below="@id/save_file"
-    android:layout_marginTop="20dp"/>
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.thagadur.android_assignment14_assignment3.MainActivity">
+    <!--On click of this Button the file is saved to the Memory-->
+    <Button
+        android:id="@+id/save_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save File" />
+    <!--On click of this Button it checks whether the file is exits or Not-->
+    <Button
+        android:id="@+id/check_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/save_file"
+        android:layout_marginTop="20dp"
+        android:text="Check File" />
 
 </RelativeLayout>
 

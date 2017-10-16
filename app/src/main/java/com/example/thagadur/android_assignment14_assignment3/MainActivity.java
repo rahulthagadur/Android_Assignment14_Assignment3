@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     //Button ID are declared
     Button saveBtn;
     Button checkBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -39,12 +40,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         //Check Button to check whether the file has been stored in mobile or not
-        checkBtn= (Button) findViewById(R.id.check_file);
+        checkBtn = (Button) findViewById(R.id.check_file);
         checkBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String path = getFilesDir().getAbsolutePath() + "/AndroidApplication";
-                Log.i("path=",path);
+                Log.i("path=", path);
                 System.out.println("Path of the file =" + path);
                 File file = new File(path);
 
